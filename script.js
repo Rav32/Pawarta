@@ -1,6 +1,6 @@
 // ATUR BATAS WAKTU (Tahun, Bulan-1, Tanggal, Jam, Menit)
 // Bulan dimulai dari 0 (Januari = 0, Februari = 1)
-const deadline = new Date(2026, 0, 18, 23, 59).getTime();
+const deadline = new Date(2026, 1, 18, 23, 59).getTime();
 
 function checkTime() {
     const now = new Date().getTime();
@@ -23,4 +23,5 @@ function checkTime() {
 checkTime();
 
 // Cek secara berkala setiap 10 detik
+
 setInterval(checkTime, 10000);
